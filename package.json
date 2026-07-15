@@ -3,6 +3,12 @@
     "version": "0.1.0-beta.1",
     "description": "A professional keyboard shortcut manager for web applications.",
     "type": "module",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "GTF",
+        "email": "dev@gottheflag.sa",
+        "url": "https://gottheflag.sa"
+    },
     "exports": {
         ".": {
             "import": "./dist/index.js",
@@ -12,12 +18,28 @@
     "files": [
         "dist"
     ],
+    "keywords": [
+        "shortcut",
+        "keyboard",
+        "binding"
+    ],
     "sideEffects": false,
     "scripts": {
         "dev": "tsc --watch",
         "build": "tsup",
         "test": "vitest run"
     },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gottheflag/shortcut"
+    },
+    "bugs": {
+        "url": "https://github.com/gottheflag/shortcut/issues"
+    },
+    "homepage": "https://github.com/gottheflag/shortcut#readme",
     "devDependencies": {
         "jsdom": "^29.1.1",
         "tsup": "^8.5",
